@@ -32,7 +32,6 @@ function secondanim(){
         entered += 0.02;
         if(entered > 1){
             down = false;
-            times += 1;
         }
         $(".fader").css({
             opacity: entered
@@ -40,14 +39,14 @@ function secondanim(){
         return false;
     }
     
-    if(fade = "in" && entered > 0 && down == false){
-        entered -= 0.02;
-        $(".afterfade").css({
-            left: 0
-        });
+    if(entered > 0){
         $(".fader").css({
             opacity: entered
         });
+        $(".afterfade").css({
+            left: 0
+        });
+        entered -= 0.02;
     }
 }
 
