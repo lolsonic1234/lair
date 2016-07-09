@@ -34,7 +34,7 @@ body {
 .wall {
     position: absolute;
     width: 100vw;
-    height: 100vw;
+    height: 400vw;
     top: 0vw;
     background-color: black;
 }
@@ -44,7 +44,7 @@ body {
     width: 100vw;
     height: 20vw;
     top: 37vw;
-    background: linear-gradient(#545454, gray);
+    background: linear-gradient(#131313, gray);
 }
 
 
@@ -54,5 +54,101 @@ body {
     width: 100vw;
     height: 100vw;
     top: 37vw;
-    background: linear-gradient(#545454, gray);
+    background: linear-gradient(#797979, gray);
+}
+
+.button1 {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 2vw;
+    left: -42vw;
+    background-color: #99595C;
+    border-radius: 10px;
+    transition: background-color 1s, left 1s;
+}
+
+
+
+.button1:hover {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 2vw;
+    left: 2vw;
+    background-color: #99091B;
+    border-radius: 10px;
+    transition: background-color 1s, left 1s;
+}
+
+.button2 {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 12vw;
+    left: -42vw;
+    background-color: #99595C;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.2s;
+}
+
+
+
+.button2:hover {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 12vw;
+    left: 2vw;
+    background-color: #99091B;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.2s;
+}
+
+.button3 {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 22vw;
+    left: -42vw;
+    background-color: #99595C;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.4s;
+}
+
+
+
+.button3:hover {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 22vw;
+    left: 2vw;
+    background-color: #99091B;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.4s;
+}
+
+.button4 {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 32vw;
+    left: -42vw;
+    background-color: #99595C;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.6s;
+}
+
+
+
+.button4:hover {
+    position: absolute;
+    width: 15vw;
+    height: 7.6vw;
+    top: 32vw;
+    left: 2vw;
+    background-color: #99091B;
+    border-radius: 10px;
+    transition: background-color 1s, left 1.6s;
 }
