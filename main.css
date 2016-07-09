@@ -4,6 +4,7 @@ body {
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
+    background-color: black;
 }
 
 .fader {
@@ -14,4 +15,44 @@ body {
     height: 100%;
     background-color: black;
     opacity: 0;
+}
+
+
+
+.afterfade {
+    position: absolute;
+    left: -10000vw;
+}
+
+.centerImg {
+    width: 25vw;
+    position: absolute;
+    left: 38.4vw;
+}
+
+
+.wall {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: 0vw;
+    background-color: black;
+}
+
+.floor {
+    position: absolute;
+    width: 100vw;
+    height: 20vw;
+    top: 37vw;
+    background: linear-gradient(#545454, gray);
+}
+
+
+
+.floorfill {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: 37vw;
+    background: linear-gradient(#545454, gray);
 }
