@@ -48,6 +48,25 @@ function secondanim(){
         });
         entered -= 0.02;
     }
+    
+    if(entered < 0.01 && down == false){
+        $(".fader").css({
+            zIndex: -9
+        });
+        $(".button1").css({
+            left: "2vw"
+        });
+        $(".button2").css({
+            left: "2vw"
+        });
+        $(".button3").css({
+            left: "2vw"
+        });
+        $(".button4").css({
+            left: "2vw"
+        });
+        down = "none";
+    }
 }
 
 function animateEnter(){
@@ -56,7 +75,6 @@ function animateEnter(){
         entered += 0.02;
         if(entered > 0.74){
             down = false;
-            times += 1;
         }
         $(".fader").css({
             opacity: entered
