@@ -16,7 +16,7 @@ $(document).ready(function(){
     console.log("Jquery Started Up!");
     
     inter = setInterval(animateEnter, 40);
-    sc = setInterval(settle, 4000);
+    sc = setInterval(settle, 6000);
 });
 
 
@@ -28,12 +28,26 @@ function settle(){
 
 function secondanim(){
     clearInterval(sc);
-    if(1 == 1){
+    if(fade = "in" && entered < 1 && down == true){
         entered += 0.02;
+        if(entered > 1){
+            down = false;
+            times += 1;
+        }
         $(".fader").css({
             opacity: entered
         });
         return false;
+    }
+    
+    if(fade = "in" && entered > 0 && down == false){
+        entered -= 0.02;
+        $(".afterfade").css({
+            left: 0
+        });
+        $(".fader").css({
+            opacity: entered
+        });
     }
 }
 
