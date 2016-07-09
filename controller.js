@@ -23,6 +23,7 @@ $(document).ready(function(){
 
 function settle(){
     clearInterval(inter);
+    entered = 0;
     inter = setInterval(secondanim, 40);
 }
 
